@@ -17,6 +17,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./mybook.xlsx
-          asset_name: mybook-${{ github.event.release.tag_name }}.xlsx
+          asset_path: ./RLUS-LifeDB-SQL-Workbook.xlsm
+          asset_name: ./RLUS-LifeDB-SQL-Workbook-${{ github.event.release.tag_name }}.xlsm
           asset_content_type: application/zip
